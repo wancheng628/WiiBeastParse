@@ -3,9 +3,9 @@ vm: true
 
 env_variables:
   # --REQUIRED--
-  DATABASE_URI: mongodb://localhost:27017/dev
-  APP_ID: <your-app-id>
-  MASTER_KEY: <your-master-key>
+  DATABASE_URI: mongodb://admin:admin@ds135689.mlab.com:35689/wiibeast
+  APP_ID: 4v3fI7R1Hrj2GJcHTjSeK6ynOCTmfI8rpXwO3i6J
+  MASTER_KEY: Od2aQxXUkExNqduwIKpGkwHDIOofzlFNunmHxROh
   # --OPTIONAL--
   # FILE_KEY: <your-file-key>
   # PARSE_MOUNT: /parse

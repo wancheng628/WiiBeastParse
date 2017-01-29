@@ -10,15 +10,15 @@
     },
     "APP_ID": {
       "description": "A unique identifier for your app.",
-      "value": ""
+      "value": "4v3fI7R1Hrj2GJcHTjSeK6ynOCTmfI8rpXwO3i6J"
     },
     "MASTER_KEY": {
       "description": "A key that overrides all permissions. Keep this secret.",
-      "value": ""
+      "value": "Od2aQxXUkExNqduwIKpGkwHDIOofzlFNunmHxROh"
     },
     "DATABASE_URI": {
       "description": "Connection string for your database.",
-      "value": "$SCALINGO_MONGO_URL"
+      "value": "mongodb://admin:admin@ds135689.mlab.com:35689/wiibeast"
     }
   },
   "addons": ["scalingo-mongodb"]
