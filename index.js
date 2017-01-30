@@ -21,10 +21,6 @@ var api = new ParseServer({
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }, 
   push: {
-      android: {
-        senderId: '590644427949',
-        apiKey: 'AIzaSyDeZ08rXk-ynVCxfJK9jHcwNE-Ad0ypZa4'
-      },
       ios: {
         pfx: 'wiibeastapnsCertificates.p12',
         passphrase: '', // optional password to your p12/PFX
