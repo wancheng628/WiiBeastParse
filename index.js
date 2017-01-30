@@ -16,7 +16,7 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || '4v3fI7R1Hrj2GJcHTjSeK6ynOCTmfI8rpXwO3i6J',
   masterKey: process.env.MASTER_KEY || 'Od2aQxXUkExNqduwIKpGkwHDIOofzlFNunmHxROh', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://parseserver2-ervtt-env.us-east-1.elasticbeanstalk.com/parse/',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://wiibeastparse-hxz5m-env.us-east-1.elasticbeanstalk.com/parse/',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }, 
@@ -33,7 +33,7 @@ var api = new ParseServer({
       }
   },
   verifyUserEmails: false,
-  publicServerURL: 'http://parseserver2-ervtt-env.us-east-1.elasticbeanstalk.com/parse/',
+  publicServerURL: 'http://wiibeastparse-hxz5m-env.us-east-1.elasticbeanstalk.com/parse/',
   appName: 'WiiBeast',
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
