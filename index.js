@@ -16,10 +16,25 @@ var api = new ParseServer({
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || '4v3fI7R1Hrj2GJcHTjSeK6ynOCTmfI8rpXwO3i6J',
   masterKey: process.env.MASTER_KEY || 'Od2aQxXUkExNqduwIKpGkwHDIOofzlFNunmHxROh', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://wiibeast.elasticbeanstalk.com/parse/',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://parseserver2-ervtt-env.us-east-1.elasticbeanstalk.com/parse/',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
-  }
+  }, 
+  push: {
+      android: {
+        senderId: '590644427949',
+        apiKey: 'AIzaSyDeZ08rXk-ynVCxfJK9jHcwNE-Ad0ypZa4'
+      },
+      ios: {
+        pfx: 'Certificates.p12',
+        passphrase: '', // optional password to your p12/PFX
+        bundleId: 'com.wiibeast.WiiBeast',
+        production: true
+      }
+  },
+  verifyUserEmails: false,
+  publicServerURL: 'http://parseserver2-ervtt-env.us-east-1.elasticbeanstalk.com/parse/',
+  appName: 'WiiBeast',
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
 // If you wish you require them, you can set them as options in the initialization above:
